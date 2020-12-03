@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="disastercontactstyle.css">
+    <script src="disasterstyle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aed1693238.js" crossorigin="anonymous"></script>
+    
+    <title>Disaster Blog Contact Page</title>
+</head>
+
+<body>
+    <div class="bg"></div>
+    
+    <header class="container">
+        <a class="header-title" href="index.html">Master of Disaster</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="disasterabout.html">About</a></li>
+                <li><a href="disasterposts.html">Articles</a></li>
+               <li><a href="disastercontactpage.html">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main-body">
+
+       
+        <div class="contact-form">
+            <div class="row">
+                <h1 id="contact-headers" style="color: whitesmoke; text-align: center;">Contact Us!</h1>
+            </div>
+
+            <div class="row">
+                <h4 id="contact-headers" style="color: whitesmoke; text-align: center;"> Thank you for your interest. We'd love to hear from you. </h4>
+            </div>
+
+            <form action="mailto:barrisegriffin@outlook.com" method="POST" enctype="multipart/form-data"name="EmailForm">
+
+            <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" required />
+                        <label>Name</label> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input type="text" required />
+                        <label>Email</label> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:right;">
+                        <input type="text" required />
+                        <label>Phone Number</label> 
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea required></textarea>
+                        <label>Message</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <button class="btn-lrg submit-btn">Send Message</button>
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+        
+        
+
+    </main>
+
+
+    
+
+    <footer>
+        <a href="https://www.linkedin.com/in/barrise-griffin-6ba6aa126/" class="fab fa-linkedin-square"></a>
+        <a href="https://nadiareese.tumblr.com/" class="fab fa-tumblr-square"></a>
+        <i class="fab fa-facebook-square"></i>
+    </footer>
+  
+</body>
+
+<div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script lang="JavaScript">
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script></div>
+
+
+</html>

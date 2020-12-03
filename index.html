@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="disasterindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aed1693238.js" crossorigin="anonymous"></script>
+    <title>Disaster Personal Blog</title>
+</head>
+<body>
+    <header>
+        <a class="header-title" href="index.html">Master of Disaster</a>
+        <nav>
+            <ul class="nav justify-content-end">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="disasterabout.html">About</a></li>
+                <li><a href="disasterposts.html">Articles</a></li>
+               <li><a href="disastercontactpage.html">Contact Us</a></li>
+               
+            </ul>
+    
+        </nav>
+
+    </header>
+
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script></div>
+
+    <!--Intro Banner-->
+
+    <main class="main-body">
+
+        <div class="banner-container">
+            <h1 data-aos="fade-up">Making the World Resilient</h1>
+            <h4 data-aos="fade-up">Master of Disaster</h4>
+            <button data-aos="fade-up" type="button" class="btn btn-info btn-lg"><a href="disasterposts.html">Explore</a></button>
+        </div>
+
+    <!--About Banner-->
+
+    <section class="meet-about">
+        <h1 data-aos="fade-up">Meet the Master</h1>
+        <br>
+
+        <div class="meet-flex">
+        <div><img class="meet-about-image" alt="Image of Hibiscus Flower" src="hibiscus.jpg"></div>
+
+       <div> <p data-aos="fade-up"><h4>Barrise Griffin,</h4> an expert in Disaster Management and Emergency Preparedness. My mission to get everyone to think about how disasters impact not only yourselves, but your everyday lives now and in the future. It is important to stay ready so you don't have to get ready. </p>
+       <p><a href="disasterabout.html"><button data-aos="fade-up" type="button" class="btn btn-info btn-lg" style="background-color: black;">  Learn More.</button></a></p>
+    </div>
+
+      
+    </div>
+        
+    </section>
+
+    <!--Reach Out Banner-->
+
+    <section class="reach-banner-container">
+        <h1> Want to Get Prepared?</h1>
+        <h4>Preparing for an emergency can be overwhelming. Let us help you. Contact us and ask for advice, strategies and tips.</h4>
+        <a href="disastercontactpage.html"><button data-aos="fade-up" type="button" class="btn btn-info btn-lg" style="background-color: black;">  Reach Out.</button></a>
+
+    </section>
+        
+
+    </main>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/barrise-griffin-6ba6aa126/" class="fab fa-linkedin-square"></a>
+        <a href="https://nadiareese.tumblr.com/" class="fab fa-tumblr-square"></a>
+        <i class="fab fa-facebook-square"></i>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="disasterpostsstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aed1693238.js" crossorigin="anonymous"></script>
+    
+    <title>Disaster Blog Posts Page</title>
+
+</head>
+
+
+<body>
+
+    
+    <header class="container">
+        <a class="header-title" href="index.html">Master of Disaster</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="disasterabout.html">About</a></li>
+                <li><a href="disasterposts.html">Articles</a></li>
+               <li><a href="disastercontactpage.html">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <section class="entry-header">
+
+        <h1>Disaster Preparedness</h1>
+        <h2>Explore Resilience and Disasters</h2>
+
+         </section>
+
+      <section id="table-background">
+         <div class="row">
+         <div class="column-one">
+
+            <h2>Be Prepared.</h2>
+            <p> Risk is all round us. And worst case secnarios can happen at any time. Read below for the introduction to our brand new "Preparedness Series" for future tips and strategies to say prepared for any disaster life may throw at you. Stay ready so you don't have to get ready.</p>
+            
+            <div class="article-container">
+              <img src="Satellite Image of Dorian over BAH-Guardian.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <!--Button-->
+              <button id="Btn" class="text-button" >Preparedness Series</button>
+
+              <!--The Modal-->
+              <div id="myModal" class="modal">
+
+                <!--Modal Content-->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Website Under Construction. Articles Coming Soon.</p>
+              </div>
+              </div>
+            </div>
+        </div>
+
+    
+
+       
+        
+        </div>
+      </section>
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <a href="https://www.linkedin.com/in/barrise-griffin-6ba6aa126/" class="fab fa-linkedin-square"></a>
+        <a href="https://nadiareese.tumblr.com/" class="fab fa-tumblr-square"></a>
+        <i class="fab fa-facebook-square"></i>
+    </footer>
+   
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("Btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+      </script>
+
+
+   
+</body>
+</html>
